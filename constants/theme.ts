@@ -3,51 +3,26 @@
  * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
  */
 
-import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
-
-export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-  },
+export const lightTheme = {
+  background: "hsl(236, 33%, 95%)",
+  formBackground: "hsl(0, 0%, 98%)",
+  primaryText: "hsl(235, 21%, 11%)",
+  secondaryText: "hsl(236, 9%, 61%)",
+  borderColor: "hsl(236, 33%, 90%)",
+  shadowColor: "hsl(270, 7%, 84%)",
+  brightBlue: "hsl(220, 98%, 61%)",
+  completedText: "hsl(236, 9%, 61%)",
 };
 
-export const Fonts = Platform.select({
-  ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
-  },
-  default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
-  },
-  web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-    serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
-    mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-  },
-});
+export const darkTheme = {
+  background: "hsl(235, 21%, 11%)",
+  formBackground: "hsl(235, 24%, 19%)",
+  primaryText: "hsl(234, 39%, 85%)",
+  secondaryText: "hsl(234, 11%, 52%)",
+  borderColor: "hsl(233, 14%, 35%)",
+  shadowColor: "transparent",
+  brightBlue: "hsl(220, 98%, 61%)",
+  completedText: "hsl(233, 14%, 35%)",
+};
+
