@@ -10,29 +10,7 @@ export default function Footer({ theme }: FooterProps) {
     <View style={styles.footer}>
       <View style={styles.icons} /> {/* Optional icons row */}
 
-      <Text style={[styles.attribution, { color: theme.primaryText }]}>
-        Challenge by{" "}
-        <Text
-          style={[styles.link, { color: theme.brightBlue }]}
-          onPress={() =>
-            Linking.openURL("https://www.frontendmentor.io?ref=challenge")
-          }
-        >
-          Frontend Mentor
-        </Text>
-        . Coded by{" "}
-        <Text
-          style={[styles.link, { color: theme.brightBlue }]}
-          onPress={() =>
-            Linking.openURL(
-              "https://github.com/ajkun55/Todo-app-Frontend-Mentor-Challenge-using-React"
-            )
-          }
-        >
-          John A
-        </Text>
-        .
-      </Text>
+      
     </View>
   );
 }
